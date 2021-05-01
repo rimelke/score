@@ -43,6 +43,10 @@ export const IconsSpace = styled.div`
     gap: 0.5rem;
   }
 
+  div a {
+    color: black;
+  }
+
   div svg {
     display: block;
     width: 1.5rem;

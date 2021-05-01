@@ -10,7 +10,8 @@ export interface ITrack {
     image: string
     title: string
     artist: string
-    duration: number    
+    duration: number
+    link: string
 }
 
 interface Props {
@@ -65,8 +66,10 @@ const Track: React.FC<Props> = ({ data }) => {
                     <div>
                         {favTracks.map(track => track.id).includes(data.id)
                             ? <AiFillHeart onClick={() => dispatch({type: 'REMOVE_TRACK', id: data.id})} className="heart fav" />
-                            : <AiOutlineHeart onClick={() => dispatch({type: 'ADD_TRACK', track: data})} className="heart" />} 
-                        <FiExternalLink />
+                            : <AiOutlineHeart onClick={() => dispatch({type: 'ADD_TRACK', track: data})} className="heart" />}
+                        <a href={data.link} target="_blank">
+                            <FiExternalLink />
+                        </a>
                     </div>
                     {isPlaying
                         ? <AiFillPauseCircle onClick={pause} />

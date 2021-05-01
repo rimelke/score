@@ -72,7 +72,8 @@ const Home = props => {
                 duration: track.duration,
                 image: track.album.cover,
                 title: track.title_short,
-                id: track.id
+                id: track.id,
+                link: track.link
             }))} />
         </>
     )
