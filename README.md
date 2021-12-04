@@ -1,6 +1,6 @@
 # **:musical_note: Score**
 
-An app to find and get together all of your favourite Deezer' songs.
+An app to find and get together all of your favourite Deezer' songs. [Access the demo.][demo]
 
 ## :bulb: Objective
 
@@ -79,3 +79,4 @@ Made with ❤️ by <a  href="https://www.linkedin.com/in/rikelme-griep-b265a51a
 [next]: https://nextjs.org/
 [redux]: https://redux.js.org/
 [styled]: https://styled-components.com/
+[demo]: https://score-tan.vercel.app/
